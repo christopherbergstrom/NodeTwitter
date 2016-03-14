@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>RESTful Words Client</title>
+  <script src="./javascripts/wordsclient.js"></script>
+  </head>
+<body>
+<div id="wordcounts"><h4>Count:</h4>
+  <input type="checkbox" id="countCheckbox"/>Case Sensitive<br>
+  <input name="countWord" id="countWord">
+  <ul id="displayCount"></ul>
+</div>
+<div id="wordsearch"><h4>Search:</h4>
+  <input type="checkbox" id="searchCheckbox"/>Case Sensitive<br>
+  <input name="searchWord" id="searchWord" size="45" type="text" data-threshold="4"><br>
+  <select id="wordlist" size="10" style="width: 45ex;"></select>
+</div>
+<div id="wordId"></div>
+<div id="wordValue"></div>
+<button id="deletes">delete</button>
+<form name="addWord" id="addWord">
+  <input type="text" name="word"/>
+  <input type="submit" name="submit" value="add word"/>
+</form>
+<form name="updates" id="updates">
+  <input type="text" name="word"/>
+  <input type="submit" name="submit" value="update word"/>
+</form>
+<div id="twitterList"></div>
+</body>
+</html>
